@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="358px" preserveAspectRatio="none" style="width:380px;height:358px;" version="1.1" viewBox="0 0 380 358" width="380px" zoomAndPan="magnify"><defs><filter height="300%" id="fmr2mnfpfia1g" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class OrgUnit--><rect fill="#F8F8F8" filter="url(#fmr2mnfpfia1g)" height="73.9102" id="OrgUnit" style="stroke: #383838; stroke-width: 1.5;" width="100" x="16.5" y="34"/><ellipse cx="42.75" cy="50" fill="#C2C2C2" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M45.7231,55.6431 Q45.1421,55.9419 44.5029,56.0913 Q43.8638,56.2407 43.1582,56.2407 Q40.6514,56.2407 39.3315,54.5889 Q38.0117,52.937 38.0117,49.8159 Q38.0117,46.6865 39.3315,45.0347 Q40.6514,43.3828 43.1582,43.3828 Q43.8638,43.3828 44.5112,43.5322 Q45.1587,43.6816 45.7231,43.9805 L45.7231,46.7031 Q45.0923,46.1221 44.4988,45.8523 Q43.9053,45.5825 43.2744,45.5825 Q41.9297,45.5825 41.2449,46.6492 Q40.5601,47.7158 40.5601,49.8159 Q40.5601,51.9077 41.2449,52.9744 Q41.9297,54.041 43.2744,54.041 Q43.9053,54.041 44.4988,53.7712 Q45.0923,53.5015 45.7231,52.9204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="43" x="59.25" y="54.5352">OrgUnit</text><line style="stroke: #383838; stroke-width: 1.5;" x1="17.5" x2="115.5" y1="66" y2="66"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="55" x="22.5" y="80.6348">str unit_id</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="88" x="22.5" y="93.5898">float qr_revenue</text><line style="stroke: #383838; stroke-width: 1.5;" x1="17.5" x2="115.5" y1="99.9102" y2="99.9102"/><!--class BusinessTrip--><rect fill="#F8F8F8" filter="url(#fmr2mnfpfia1g)" height="125.7305" id="BusinessTrip" style="stroke: #383838; stroke-width: 1.5;" width="164" x="207.5" y="8"/><ellipse cx="249.05" cy="24" fill="#C2C2C2" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M252.0231,29.6431 Q251.4421,29.9419 250.8029,30.0913 Q250.1638,30.2407 249.4582,30.2407 Q246.9514,30.2407 245.6315,28.5889 Q244.3117,26.937 244.3117,23.8159 Q244.3117,20.6865 245.6315,19.0347 Q246.9514,17.3828 249.4582,17.3828 Q250.1638,17.3828 250.8112,17.5322 Q251.4587,17.6816 252.0231,17.9805 L252.0231,20.7031 Q251.3923,20.1221 250.7988,19.8523 Q250.2053,19.5825 249.5744,19.5825 Q248.2297,19.5825 247.5449,20.6492 Q246.8601,21.7158 246.8601,23.8159 Q246.8601,25.9077 247.5449,26.9744 Q248.2297,28.041 249.5744,28.041 Q250.2053,28.041 250.7988,27.7712 Q251.3923,27.5015 252.0231,26.9204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="73" x="268.95" y="28.5352">BusinessTrip</text><line style="stroke: #383838; stroke-width: 1.5;" x1="208.5" x2="370.5" y1="40" y2="40"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="80" x="213.5" y="54.6348">date start_date</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="213.5" y="67.5898">date end_date</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="121" x="213.5" y="80.5449">TripCategory category</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="78" x="213.5" y="93.5">Budget budget</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="124" x="213.5" y="106.4551">Destination destination</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="152" x="213.5" y="119.4102">EmployeeLevel traveler_level</text><line style="stroke: #383838; stroke-width: 1.5;" x1="208.5" x2="370.5" y1="125.7305" y2="125.7305"/><!--class FlightOption--><rect fill="#F8F8F8" filter="url(#fmr2mnfpfia1g)" height="138.6855" id="FlightOption" style="stroke: #383838; stroke-width: 1.5;" width="121" x="6" y="211"/><ellipse cx="30.45" cy="227" fill="#C2C2C2" rx="11" ry="11" style="stroke: #383838; stroke-width: 1.0;"/><path d="M33.4231,232.6431 Q32.8421,232.9419 32.2029,233.0913 Q31.5638,233.2407 30.8582,233.2407 Q28.3514,233.2407 27.0315,231.5889 Q25.7117,229.937 25.7117,226.8159 Q25.7117,223.6865 27.0315,222.0347 Q28.3514,220.3828 30.8582,220.3828 Q31.5638,220.3828 32.2112,220.5322 Q32.8587,220.6816 33.4231,220.9805 L33.4231,223.7031 Q32.7923,223.1221 32.1988,222.8523 Q31.6053,222.5825 30.9744,222.5825 Q29.6297,222.5825 28.9449,223.6492 Q28.2601,224.7158 28.2601,226.8159 Q28.2601,228.9077 28.9449,229.9744 Q29.6297,231.041 30.9744,231.041 Q31.6053,231.041 32.1988,230.7712 Q32.7923,230.5015 33.4231,229.9204 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="68" x="46.55" y="231.5352">FlightOption</text><line style="stroke: #383838; stroke-width: 1.5;" x1="7" x2="126" y1="243" y2="243"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="71" x="12" y="257.6348">Airline airline</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="79" x="12" y="270.5898">int total_hours</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="109" x="12" y="283.5449">SeatClass seat_class</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="89" x="12" y="296.5">float ticket_price</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="80" x="12" y="309.4551">date start_date</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="75" x="12" y="322.4102">date end_date</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="71" x="12" y="335.3652">bool selected</text><line style="stroke: #383838; stroke-width: 1.5;" x1="7" x2="126" y1="341.6855" y2="341.6855"/><!--link OrgUnit to BusinessTrip--><path d="M116.5456,71 C141.7949,71 173.1587,71 202.2167,71 " fill="none" id="OrgUnit-BusinessTrip" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#383838" points="207.2351,71,198.2351,67,202.2351,71,198.2351,75,207.2351,71" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="54" x="135" y="64.5684">requests</text><!--link OrgUnit to FlightOption--><path d="M66.5,108.4544 C66.5,135.3784 66.5,172.5887 66.5,205.5185 " fill="none" id="OrgUnit-FlightOption" style="stroke: #383838; stroke-width: 1.0;"/><polygon fill="#383838" points="66.5,210.7646,70.5,201.7646,66.5,205.7646,62.5,201.7646,66.5,210.7646" style="stroke: #383838; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="44" x="67.5" y="177.5684">selects</text><!--
+@startuml
+skinparam monochrome true
+
+class OrgUnit {
+    str unit_id
+    float qr_revenue
+}
+
+class BusinessTrip {
+    date start_date
+    date end_date
+    TripCategory category
+    Budget budget
+    Destination destination
+    EmployeeLevel traveler_level
+}
+
+class FlightOption {
+    Airline airline
+    int total_hours
+    SeatClass seat_class
+    float ticket_price
+    date start_date
+    date end_date
+    bool selected
+}
+
+OrgUnit -> BusinessTrip : requests
+OrgUnit - -> FlightOption : selects
+@enduml
+
+PlantUML version 1.2017.13(Wed May 10 19:52:33 EEST 2017)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_121-b13
+Operating System: Mac OS X
+OS Version: 10.12.2
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

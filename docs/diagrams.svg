@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="366px" preserveAspectRatio="none" style="width:447px;height:366px;" version="1.1" viewBox="0 0 447 366" width="447px" zoomAndPan="magnify"><defs><filter height="300%" id="f1gbpjcoau1r3d" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--cluster Business Trip System--><rect fill="#FFFFFF" filter="url(#f1gbpjcoau1r3d)" height="343" style="stroke: #000000; stroke-width: 2.0;" width="172" x="145" y="16"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="156" x="153" y="31.5352">Business Trip System</text><ellipse cx="231.1657" cy="68.9619" fill="#F8F8F8" filter="url(#f1gbpjcoau1r3d)" rx="65.6657" ry="25.4619" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="92" x="185.1657" y="66.6965">request flight</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="77" x="192.6657" y="83.1848">reservation</text><ellipse cx="230.8615" cy="153.9396" fill="#F8F8F8" filter="url(#f1gbpjcoau1r3d)" rx="54.3615" ry="24.4396" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="79" x="191.3615" y="153.2241">select flight</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="45" x="208.3615" y="169.7124">option</text><ellipse cx="230.7776" cy="237.8422" fill="#F8F8F8" filter="url(#f1gbpjcoau1r3d)" rx="65.7776" ry="24.3422" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="97" x="182.2776" y="237.2796">propose flight</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="52" x="204.7776" y="253.7679">options</text><ellipse cx="230.9472" cy="323.818" fill="#F8F8F8" filter="url(#f1gbpjcoau1r3d)" rx="57.4472" ry="26.318" style="stroke: #383838; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="77" x="192.4472" y="320.318">make flight</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="77" x="192.4472" y="336.8062">reservation</text><!--entity BTRequestor--><ellipse cx="49.5" cy="80.5" fill="#F8F8F8" filter="url(#f1gbpjcoau1r3d)" rx="8" ry="8" style="stroke: #383838; stroke-width: 2.0;"/><path d="M49.5,88.5 L49.5,115.5 M36.5,96.5 L62.5,96.5 M49.5,115.5 L36.5,130.5 M49.5,115.5 L62.5,130.5 " fill="#F8F8F8" filter="url(#f1gbpjcoau1r3d)" style="stroke: #383838; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="87" x="6" y="151.0352">BTRequestor</text><!--entity BTManager--><ellipse cx="407.5" cy="249.5" fill="#F8F8F8" filter="url(#f1gbpjcoau1r3d)" rx="8" ry="8" style="stroke: #383838; stroke-width: 2.0;"/><path d="M407.5,257.5 L407.5,284.5 M394.5,265.5 L420.5,265.5 M407.5,284.5 L394.5,299.5 M407.5,284.5 L420.5,299.5 " fill="#F8F8F8" filter="url(#f1gbpjcoau1r3d)" style="stroke: #383838; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="77" x="369" y="320.0352">BTManager</text><!--link BTRequestor to request flight\nreservation--><path d="M93.4361,101.5909 C117.8808,95.7996 148.566,88.5298 174.7494,82.3266 " fill="none" id="BTRequestor-request flight\nreservation" style="stroke: #383838; stroke-width: 1.0;"/><!--link BTRequestor to select flight\noption--><path d="M93.4361,122.167 C120.2938,128.382 154.6848,136.3403 182.3613,142.7448 " fill="none" id="BTRequestor-select flight\noption" style="stroke: #383838; stroke-width: 1.0;"/><!--link propose flight\noptions to BTManager--><path d="M286.3614,251.4875 C313.1521,258.0144 344.6617,265.691 368.8286,271.5786 " fill="none" id="propose flight\noptions-BTManager" style="stroke: #383838; stroke-width: 1.0;"/><!--link make flight\nreservation to BTManager--><path d="M282.0511,311.5626 C309.7437,304.816 343.4179,296.6121 368.9027,290.4033 " fill="none" id="make flight\nreservation-BTManager" style="stroke: #383838; stroke-width: 1.0;"/><!--
+@startuml
+skinparam monochrome true
+
+left to right direction
+skinparam packageStyle rectangle
+actor BTRequestor
+actor BTManager
+
+rectangle "Business Trip System" {
+    BTRequestor - - (request flight\nreservation)
+    BTRequestor - - (select flight\noption)
+    (propose flight\noptions) - - BTManager
+    (make flight\nreservation) - - BTManager
+}
+@enduml
+
+PlantUML version 1.2017.13(Wed May 10 19:52:33 EEST 2017)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_121-b13
+Operating System: Mac OS X
+OS Version: 10.12.2
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

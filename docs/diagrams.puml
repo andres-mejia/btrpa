@@ -1,0 +1,221 @@
+@startuml
+skinparam monochrome true
+
+left to right direction
+skinparam packageStyle rectangle
+actor BTRequestor
+actor BTManager
+
+rectangle "Business Trip System" {
+    BTRequestor -- (request flight\nreservation)
+    BTRequestor -- (select flight\noption)
+    (propose flight\noptions) -- BTManager
+    (make flight\nreservation) -- BTManager
+}
+@enduml
+
+@startuml
+skinparam monochrome true
+
+|BTManager|
+|BTRequestor|
+start
+:business trip planned<
+:determine trip timeframe,\nurgency, and destination;
+repeat
+:set travel preferences;
+note left
+airline, legs, seat class,
+price range, date range
+end note
+if (flight options) then (unknown)
+    :request flight options>
+    |BTManager|
+    :lookup flight options;
+    :propose flight options\nto requestor>
+    |BTRequestor|
+    :receive proposed\noptions<
+else (known)
+endif
+|BTRequestor|
+:select an option;
+if (flight option) then (selected)
+    :notify manager of\nselected option>
+    |BTManager|
+    :make flight reservation;
+    if (selected option) then (available)
+        :send eticket to\nrequestor>
+    else (unavailable)
+        :notify requestor\nabout failure>
+    endif
+else (rejected all)
+endif
+repeat while (reservation made?) is (no)
+|BTRequestor|
+stop
+@enduml
+
+@startuml
+skinparam monochrome true
+
+class OrgUnit {
+    str unit_id
+    float qr_revenue
+}
+
+class BusinessTrip {
+    date start_date
+    date end_date
+    TripCategory category
+    Budget budget
+    Destination destination
+    EmployeeLevel traveler_level
+}
+
+class FlightOption {
+    Airline airline
+    int total_hours
+    SeatClass seat_class
+    float ticket_price
+    date start_date
+    date end_date
+    bool selected
+}
+
+OrgUnit -> BusinessTrip : requests
+OrgUnit --> FlightOption : selects
+@enduml
+
+@startuml
+skinparam monochrome true
+
+enum TripCategory {
+    client_needs
+    internal_needs
+    recreation
+}
+
+enum Budget {
+    client_budget
+    internal_budget
+}
+
+enum Destination {
+    US
+    Europe
+}
+
+enum Airline {
+    AirCondor
+    FlyHop
+    Amair
+    Cheapgo
+}
+
+enum SeatClass {
+    business
+    economy_plus
+    economy
+}
+
+enum EmployeeLevel {
+    regular
+    manager
+    executive
+}
+@enduml
+
+@startuml
+skinparam componentStyle uml2
+skinparam monochrome true
+
+actor BTManager
+actor BTRequestor
+
+component FlightReservationSite <<external>>
+component BusinessTripDesk <<internal>>
+database RDBMS{
+    [corporate\ndatabase] as db
+}
+
+[BusinessTripDesk] ..> [db] : store\ntrip data
+
+BTManager ..> FlightReservationSite : make\nreservation
+BTManager ..> BusinessTripDesk : process\nrequest
+BTRequestor ..> BusinessTripDesk : make\nrequest
+@enduml
+
+@startuml
+skinparam componentStyle uml2
+skinparam monochrome true
+
+actor BTManager
+actor BTRequestor
+
+component FlightReservationSite <<external>>
+component BusinessTripDesk <<internal>>
+database RDBMS{
+    [corporate\ndatabase] as db
+}
+component BTRobot <<RPA>>
+component ReservationDSS <<RPA>>
+
+[BusinessTripDesk] ..> [db] : store\ntrip data
+[ReservationDSS] ..> [db] : learn from\npast data
+
+BTRobot ..> ReservationDSS : filter\noptions
+BTRobot ..> FlightReservationSite : make\nreservation
+BTRobot ..> BusinessTripDesk : process\nrequest
+BTManager ..> BusinessTripDesk : support\nrequest
+BTRequestor ..> BusinessTripDesk : make\nrequest
+@enduml
+
+@startuml
+skinparam componentStyle uml2
+skinparam monochrome true
+
+actor User
+
+component Orchestrator <<RPA>>
+component ServiceN <<external>>
+component Service1 <<internal>>
+component Studio <<RPA>>
+component Robot <<RPA>>
+component Recorder <<RPA>>
+component Software <<internal>>
+component DSS <<RPA>>
+
+Studio ..> Robot : configure
+Studio ..> Recorder : record user\nactions
+Robot ..> Software : automate
+Robot ..> Service1 : automate
+Robot ..> ServiceN : automate
+Robot ..> DSS : consult for\ndecisions
+Recorder ..> User : watch\nactions
+Orchestrator ..> Robot : orchestrate
+User ..> Studio : configure\nrobots
+@enduml
+
+@startuml
+skinparam componentStyle uml2
+skinparam monochrome true
+
+actor User
+
+component Orchestrator <<RPA>>
+component ServiceN <<external>>
+component Service1 <<internal>>
+component Studio <<RPA>>
+component Robot <<RPA>>
+component Recorder <<RPA>>
+component Software <<internal>>
+
+Studio ..> Robot : configure
+Studio ..> Recorder : record user\nactions
+Robot ..> Software : automate
+Robot ..> Service1 : automate
+Robot ..> ServiceN : automate
+Recorder ..> User : watch\nactions
+Orchestrator ..> Robot : orchestrate
+User ..> Studio : configure\nrobots
+@enduml
