@@ -25,8 +25,19 @@ def directory(dirname=None):
 
 
 @task
-def hello(ctx):
-    print('Hello from btrpa!')
+def install_tools_osx(ctx):
+    """
+    installs third party tools required to generate diagrams and documents
+    from sources including imagemagick, graphviz, pantuml, and pandoc
+    :param ctx:
+    """
+    ctx.run('brew install imagemagick '
+            '--with-librsvg --with-pango --with-libwmf --with-openjpeg '
+            '--with-ghostscript --with-fftw --with-fontconfig')
+    ctx.run('brew install graphviz --with-librsvg --with-freetype '
+            '--with-bindings --with-pango')
+    ctx.run('brew install plantuml')
+    ctx.run('brew install pandoc')
 
 
 @task
