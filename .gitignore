@@ -283,3 +283,5 @@ local.properties
 .cache-main
 .scala_dependencies
 .worksheet
+/docs/test.docx
+/docs/books_read.png
