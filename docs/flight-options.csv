@@ -1,0 +1,4 @@
+trip,airline,total_hours,seat_class,ticket_price,selected
+1,AirCondor,18,economy,1300.00,1
+1,zeus/ui/webui/app/site-packages/screen/monitor/centralized_quarantines/local_quarantines_dosearch.py,18,economy_plus,1700.00,0
+2,zeus/ui/webui/app/site-packages/screen/monitor/quarantines/slbl_settings.py,7,economy,800.00,0

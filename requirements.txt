@@ -5,3 +5,8 @@ jupyter
 pandas
 scipy
 scikit-learn
+python-docx
+babel
+toolz
+matplotlib
+seaborn
